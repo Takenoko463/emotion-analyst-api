@@ -7,14 +7,6 @@ import emotional_analysis
 # FastAPIのインスタンスを作成
 app = FastAPI()
 
-class Emotion(BaseModel):
-    name: str
-    value: int
-
-class Word(BaseModel):
-    word: str
-    emotions: Union[Emotion,None] = None
-
 # getメソッドで、/にアクセスした時の処理を記述
 @app.get("/")
 # asyncで*非同期処理を行う
