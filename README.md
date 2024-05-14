@@ -11,7 +11,7 @@ https://emotion-analyst-api-image-jjgaumsera-an.a.run.app/emotion/悲しい
 ```
 
 ## response
-```python
+```json
 {"word":"悲しい","emotions":[{"aware":1},{"shape":0},{"anger":0},{"unpleasant":0},{"fear":0},{"surprise":0},{"love":0},{"excitement":0},{"cheap":0},{"pleasant":0}]}
 ```
 
@@ -21,7 +21,7 @@ https://emotion-analyst-api-image-jjgaumsera-an.a.run.app/emotions/?word=悲し�
 ```
 
 ## response
-```python
+```json
 {
   "words":
   [
