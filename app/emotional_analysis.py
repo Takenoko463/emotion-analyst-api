@@ -1,8 +1,3 @@
-from bs4 import BeautifulSoup
-import re
-import numpy as np
-import matplotlib.pyplot as plt
-
 emotions = ["aware","shape","anger","unpleasant","fear","surprise","love","excitement","cheap","pleasant"]
 def get_emotional_words():
     emotional_words = {}

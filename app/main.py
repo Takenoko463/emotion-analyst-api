@@ -2,7 +2,6 @@ from typing import Union, List
 # FastAPIの読み込み
 from fastapi import FastAPI, Query
 from pydantic import BaseModel
-import math
 import emotional_analysis
 
 # FastAPIのインスタンスを作成
