@@ -2,7 +2,7 @@ version: "3.0"
 
 services:
   api:
-    container_name: "emotion-analyst-api"
+    container_name: "emotion-analyst"
     volumes:
       - ./app:/app
     build: .
