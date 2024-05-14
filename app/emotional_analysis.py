@@ -3,7 +3,7 @@ def get_emotional_words():
     emotional_words = {}
     for emotion in emotions:
         emotional_words[emotion] = []
-        with open("emotions/" + emotion + "_uncoded.txt", "r") as f:
+        with open("./app/emotions/" + emotion + "_uncoded.txt", "r") as f:
             for line in f:
                 line = line.replace('\n', '')
                 emotional_words[emotion].append(line)
