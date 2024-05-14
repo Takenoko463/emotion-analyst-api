@@ -2,7 +2,7 @@ from typing import Union, List
 # FastAPIの読み込み
 from fastapi import FastAPI, Query
 from pydantic import BaseModel
-import emotional_analysis
+from .emotional_analysis import get_analysis_word,get_analysis_words
 
 # FastAPIのインスタンスを作成
 app = FastAPI()
@@ -17,14 +17,14 @@ async def hello():
 # getメソッドで、/emotion/{word}にアクセスした時の処理を記述
 @app.get("/emotion/{word}")
 async def show(word):
-    emotion_analysis_json=emotional_analysis.get_analysis_word(word)
+    emotion_analysis_json=get_analysis_word(word)
     return  emotion_analysis_json
 
 # getメソッドで、/emotions/index/にアクセスした時の処理を記述
 @app.get("/emotions/")
 async def index(word: List[str] = Query(default=None, max_length=50)):
     if word:
-        emotions_analysis_array=emotional_analysis.get_analysis_words(word)
+        emotions_analysis_array=get_analysis_words(word)
         return {"words":emotions_analysis_array}
     else:
         return {"text":"error"}
