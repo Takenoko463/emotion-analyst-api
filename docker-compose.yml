@@ -4,7 +4,7 @@ services:
   api:
     container_name: "emotion-analyst-api"
     volumes:
-      - ./app: /app
+      - ./app:/app
     build: .
     ports:
       - 8080:8080
