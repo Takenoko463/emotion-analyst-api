@@ -22,7 +22,7 @@ async def show(word):
 
 # getメソッドで、/emotions/index/にアクセスした時の処理を記述
 @app.get("/emotions/")
-async def index(word: List[str] = Query(default=None, max_length=50)):
+async def index(word: List[str] = Query(default=None, max_length=5000)):
     if word:
         emotions_analysis_array=emotional_analysis.get_analysis_words(word)
         return {"words":emotions_analysis_array}
