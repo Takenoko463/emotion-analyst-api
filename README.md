@@ -12,7 +12,7 @@ https://emotion-analyst-api-image-jjgaumsera-an.a.run.app/emotion/悲しい
 
 ## response
 ```json
-{"word":"悲しい","emotions":[{"aware":1},{"shape":0},{"anger":0},{"unpleasant":0},{"fear":0},{"surprise":0},{"love":0},{"excitement":0},{"cheap":0},{"pleasant":0}]}
+{"word":"悲しい","emotions":[{"aware":1},{"shame":0},{"anger":0},{"unpleasant":0},{"fear":0},{"surprise":0},{"love":0},{"excitement":0},{"cheap":0},{"pleasant":0}]}
 ```
 
 ## requestを送るpath
@@ -28,13 +28,13 @@ https://emotion-analyst-api-image-jjgaumsera-an.a.run.app/emotions/?word=悲し�
     {
       "word":"悲しい",
       "emotions":[
-        {"aware":1},{"shape":0},{"anger":0},{"unpleasant":0},{"fear":0},{"surprise":0},{"love":0},{"excitement":0},{"cheap":0},{"pleasant":0}
+        {"aware":1},{"shame":0},{"anger":0},{"unpleasant":0},{"fear":0},{"surprise":0},{"love":0},{"excitement":0},{"cheap":0},{"pleasant":0}
                 ]
     },
     {
       "word":"楽しい",
       "emotions":[
-        {"aware":0},{"shape":0},{"anger":0},{"unpleasant":0},{"fear":0},{"surprise":0},{"love":0},{"excitement":0},{"cheap":1},{"pleasant":2}
+        {"aware":0},{"shame":0},{"anger":0},{"unpleasant":0},{"fear":0},{"surprise":0},{"love":0},{"excitement":0},{"cheap":1},{"pleasant":2}
         ]
     }
   ]
