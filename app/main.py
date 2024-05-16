@@ -1,7 +1,6 @@
 from typing import Union, List
 # FastAPIの読み込み
 from fastapi import FastAPI, Query
-from pydantic import BaseModel
 from starlette.middleware.cors import CORSMiddleware # 追加
 from . import emotional_analysis
 
