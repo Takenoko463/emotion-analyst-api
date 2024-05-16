@@ -1,4 +1,4 @@
-emotions = ["aware","shape","anger","unpleasant","fear","surprise","love","excitement","cheap","pleasant"]
+emotions = ["aware","shame","anger","unpleasant","fear","surprise","love","excitement","cheap","pleasant"]
 def get_emotional_words():
     emotional_words = {}
     for emotion in emotions:
